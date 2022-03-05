@@ -1,0 +1,27 @@
+inicio
+create database DBTEST2
+
+crear una tabla con los campos 
+cat_ID int primary key autoincrement,
+cat_NOM varchar(150),
+cat_DBS varchar(150)
+
+select * from TM_Categoria
+
+llenar con laptop obs_laptop, teclado obs_teclado
+
+use DBTEST2
+
+instalar la version Lts de Node
+
+creamos la carpeta del proyecto ApiDemo
+
+desde la terminal inicialisamos npm 
+npm init -y
+
+luego mssql, cors, express, nodemon en dev, body-parser
+en msservices hay que habilitar
+tcp/ip en enable
+y ver la ip, y el puerto que dice ahi por defecto.
+que este corriendo el servicio sql serverbrowser.
+
