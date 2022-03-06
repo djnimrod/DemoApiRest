@@ -34,12 +34,20 @@ router.route('/categoria/guardar').post((request, response)=> {
         response.json(result[0]);
     })
 })
+// update categoria
+router.route('/categoria/actualisar').post((request, response)=> {
+    let categoria = {...request.body}
+    dbcategoria.updateCategoria(categoria).then(result => {
+        response.json(result[0]);
+    })
+})
+
 
 
 // probarlo en postman en el puerto 8090 en local, con el verbo GET
 // para probar la busqueda por id: get http://localhost:8090/api/categoria/1
 //donde 1 es el id de categoria por parametro
-
+// para update con Post, con la ruta determinada/actualisar
 var port =  process.env.PORT || 8090;
 app.listen(port);
 console.log('running in port') + port; // mensaje de inicio
