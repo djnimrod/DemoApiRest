@@ -24,4 +24,47 @@ en msservices hay que habilitar
 tcp/ip en enable
 y ver la ip, y el puerto que dice ahi por defecto.
 que este corriendo el servicio sql serverbrowser.
+** crear el store procedure para insertar
+create procedure SP_I_CATEGORIA_01
+ARROBA CAT_ID INT,
+AROBA CAT_NOM VARCHAR(50),
+ARROBA CAT_OBS VARCHAR(150)
+AS 
+BEGIN
+      INSERT INTO TM_CATEGORIA
+      (CAT_NOM, CAT_OBS)
+      VALUES
+      (ARROBA CAT_NOM,ARROBA CAT_OBS)
+      SELECT * FROM TM_CATEGORIA
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
